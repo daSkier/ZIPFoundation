@@ -10,7 +10,7 @@
 
 import Foundation
 
-#if swift(>=5.0)
+//#if swift(>=5.0)
 
 extension Archive {
     /// Returns an `Data` object containing a representation of the receiver.
@@ -176,4 +176,4 @@ private func seekStub(_ cookie: UnsafeMutableRawPointer?,
     }
 }
 #endif
-#endif
+//#endif
