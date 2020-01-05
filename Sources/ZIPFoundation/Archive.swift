@@ -145,7 +145,7 @@ public final class Archive: Sequence {
         setvbuf(self.archiveFile, nil, _IOFBF, Int(defaultPOSIXBufferSize))
     }
 
-    #if swift(>=5.0)
+    //#if swift(>=5.0)
     var memoryFile: MemoryFile?
 
     /// Initializes a new in-memory ZIP `Archive`.
@@ -178,7 +178,7 @@ public final class Archive: Sequence {
         }
         self.endOfCentralDirectoryRecord = endOfCentralDirectoryRecord
     }
-    #endif
+    //#endif
 
     deinit {
         fclose(self.archiveFile)
